@@ -6,7 +6,7 @@
  *
  */
 
-namespace Bga\Games\MystlingAcademyAlpha;
+namespace Bga\Games\YOURGAMENAMEHERE;
 
 trait undo
 {
@@ -69,13 +69,15 @@ trait undo
 						foreach ($entry as $key => $item)
 						{
 							if ($table === 'zz_savepoint_stats' && $key === 'stats_player_id' && !$item) $list[] = "NULL";
+//
 							elseif ($table === 'zz_savepoint_player' && $key === 'player_start_reflexion_time' && !$item) $list[] = "NULL";
 							elseif ($table === 'zz_savepoint_player' && $key === 'player_remaining_reflexion_time' && !$item) $list[] = "NULL";
 							elseif ($table === 'zz_savepoint_player' && $key === 'player_state' && !$item) $list[] = "0";
+//
 							elseif ($table === 'zz_savepoint_gamelog' && $key === 'gamelog_player' && !$item) $list[] = "NULL";
 							elseif ($table === 'zz_savepoint_gamelog' && $key === 'gamelog_move_id' && !$item) $list[] = "NULL";
 //
-							elseif ($table === 'zz_savepoint_mystlings' && $key === 'action' && !$item) $list[] = "NULL";
+//							elseif ($table === 'zz_savepoint_YOURTABLE' && $key === 'YOURCOLUMN' && !$item) $list[] = "NULL";
 //
 							else $list[] = "'" . addslashes($item) . "'";
 						}
