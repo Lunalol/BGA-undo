@@ -1,3 +1,6 @@
+Just import it as a trait in your main Game.php file:
+
+	use undo;
 
 First, don't forget to enable BGA native undo support in "gameinfos.inc.php" file:
 
