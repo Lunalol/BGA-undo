@@ -73,6 +73,7 @@ trait undo
 							elseif ($table === 'zz_savepoint_player' && $key === 'player_start_reflexion_time' && !$item) $list[] = "NULL";
 							elseif ($table === 'zz_savepoint_player' && $key === 'player_remaining_reflexion_time' && !$item) $list[] = "NULL";
 							elseif ($table === 'zz_savepoint_player' && $key === 'player_state' && !$item) $list[] = "0";
+							elseif ($table === 'zz_savepoint_player' && $key === 'player_beginner') $list[] = "0";
 //
 							elseif ($table === 'zz_savepoint_gamelog' && $key === 'gamelog_player' && !$item) $list[] = "NULL";
 							elseif ($table === 'zz_savepoint_gamelog' && $key === 'gamelog_move_id' && !$item) $list[] = "NULL";
